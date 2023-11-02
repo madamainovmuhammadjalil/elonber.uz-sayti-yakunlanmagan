@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<form method="post">{% csrf_token %}
+    <h4>
+        {{article.title}} -- posti o'chirilsinmi?
+    </h4>
+    <button type="submit" class="btn btn-success"> HA </button>
+</form>
+{%endblock content%}

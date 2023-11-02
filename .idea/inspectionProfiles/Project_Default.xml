@@ -1,0 +1,48 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="aiogram" />
+            <item index="1" class="java.lang.String" itemvalue="environs" />
+            <item index="2" class="java.lang.String" itemvalue="pytz" />
+            <item index="3" class="java.lang.String" itemvalue="requests" />
+            <item index="4" class="java.lang.String" itemvalue="distlib" />
+            <item index="5" class="java.lang.String" itemvalue="pipenv" />
+            <item index="6" class="java.lang.String" itemvalue="verboselogs" />
+            <item index="7" class="java.lang.String" itemvalue="executor" />
+            <item index="8" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="9" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="10" class="java.lang.String" itemvalue="numpy" />
+            <item index="11" class="java.lang.String" itemvalue="pygments" />
+            <item index="12" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="13" class="java.lang.String" itemvalue="pywin32" />
+            <item index="14" class="java.lang.String" itemvalue="xlsxwriter" />
+            <item index="15" class="java.lang.String" itemvalue="openpyxl" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W292" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="handlers.users.Menujeyhand.Orqaga" />
+          <option value="cv2" />
+          <option value="numpy" />
+          <option value="handlers.users.test2.win32com" />
+          <option value="win32com.*" />
+          <option value="accounts.admin.CustomUserAdmin" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

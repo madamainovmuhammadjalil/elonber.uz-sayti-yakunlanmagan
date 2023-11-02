@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{%block content%}
+    <h3>{{article.title}}</h3>
+    {% if object.photo %}
+        <img class="card-img-top" src="{{ article.photo.url }}" alt="{{ article.title }}">
+    {% endif %}
+    <h6>Muharrir {{article.auther}}</h6>
+    <p>{{article.body}}</p>
+    <footer>
+        <h5><a href="{% url 'article_update' article.pk %}">Postni tahrirlash</a> </h5>
+        <h5><a href="{% url 'article_delete' article.pk %}">Postni o'chirish</a> </h5>
+    </footer>
+{%endblock content%}
