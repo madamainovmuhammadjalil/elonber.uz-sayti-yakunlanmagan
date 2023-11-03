@@ -19,7 +19,7 @@
                 {{ article.summary }}...<a href="{% url 'article_detail' article.pk %}">batafsil</a>
             </div>
             <div class="card-footer text-left text-muted">
-                <span class="text-muted">muallif {{ article.author | title }} &middot; {{ article.date }}</span>
+                <span class="text-muted">muallif {{ article.auther | title }} &middot; {{ article.date }}</span>
             </div>
         <br />
     {% endfor %}

@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # tashqi appalar
+    'ckeditor',
+    'ckeditor_uploader',
     'crispy_forms',
     # O'zm yaratgan applar
     'account',
@@ -127,6 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
 # MEDIA_URL = 'media/'
 #
 # if DEBUG:
@@ -135,14 +138,15 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 # else:
 #     STATIC_ROOT = str(BASE_DIR / 'static')
 #     MEDIA_ROOT = str(BASE_DIR / 'media/')
+
 # MEDIA
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 AUTH_USER_MODEL = 'account.CustomUser'
 
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'article_view'
+LOGOUT_REDIRECT_URL = 'article_view'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

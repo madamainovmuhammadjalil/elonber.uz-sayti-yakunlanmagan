@@ -4,6 +4,7 @@
 {%block content%}
   <form method="post">
       {% csrf_token %}
+      {{ form.media }}
       {{form|crispy}}
     <button type="submit" class="btn btn-success"> Yaratish </button>
   </form>
